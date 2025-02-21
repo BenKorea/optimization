@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="RPythonStudyGroup feat. ChatGPT">
-<meta name="dcterms.date" content="2024-12-17">
-<meta name="description" content="Template">
+<meta name="author" content="BenKorea">
+<meta name="dcterms.date" content="2025-02-19">
+<meta name="description" content="PET dose 최적화에서 사용된 영상품질평가법">
 
-<title>Template</title>
+<title>optimization – Template</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,41 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -147,29 +132,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#목적" id="toc-목적" class="nav-link active" data-scroll-target="#목적">목적</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Template</h1>
+<h1 class="title">optimization</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Template</div>
+    <div class="quarto-category">optimization</div>
+    <div class="quarto-category">IQ</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Template
+    PET dose 최적화에서 사용된 영상품질평가법
   </div>
 </div>
 
@@ -179,21 +159,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>RPythonStudyGroup feat. ChatGPT </p>
+             <p>BenKorea </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 17, 2024</p>
+      <p class="date">February 19, 2025</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">December 18, 2024</p>
+      <p class="date-modified">February 19, 2025</p>
     </div>
   </div>
     
@@ -204,65 +184,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="1단계: `Quarto Website` 프로젝트 만들기">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-1단계: <code>Quarto Website</code> 프로젝트 만들기
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ul>
-<li>RStudio/File 메뉴에서 <code>New Project...</code> 메뉴 선택</li>
-<li><code>New Directory</code>에 생성되도록 선택</li>
-<li>Project type은 <code>Quarto Website</code>를 선택</li>
-<li>상위폴더가 <code>C:/Projects</code>인지 확인 (=Global Options 사전 지정값)</li>
-<li>Directory name은 <code>R-4.4.1-Quarto_Website_Example</code>로 지정</li>
-<li><label><input type="checkbox" checked="">Create a git repository: 체크 유지하여 버전관리 적용</label></li>
-<li><label><input type="checkbox" checked="">Use renv with this project: 체크 유지하여 패키지 독립관리 적용</label></li>
-<li><label><input type="checkbox" checked="">Use visual markdown editor: 체크 유지하여 wizwig 에디터 사용</label></li>
-<li><label><input type="checkbox">Open in new session: 기존 프로젝트가 이미 열려있고, 같이 사용할려면 체크</label></li>
-</ul>
-</div>
-</div>
-</div>
-<p>툴팁은 <span class="text-primary" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="bottom" title="1열<br> 2열"><code>특정문자</code></span>이 구현되어야 한다.</p>
-<div class="cell">
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>recommeded project name</strong></pre>
-</div>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>R<span class="dv">-4</span>.<span class="fl">4.1</span><span class="sc">-</span>Hands_on_Shinylive_Example</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<ul>
-<li>폴더구조 참조</li>
-</ul>
-<div id="fig-ProjectDirectory" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-ProjectDirectory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<pre id="fig-ProjectDirectory"><code>C:\Projects\
-      └─ R-x.y.z-Project_Name</code></pre>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ProjectDirectory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Recommended nomenclautue for Project directory name
-</figcaption>
-</figure>
-</div>
-<section id="목적" class="level3">
-<h3 class="anchored" data-anchor-id="목적">목적</h3>
-<ul>
-<li>QUarto Website 프로젝트를 생성하고 Bootstrap tooltip 및 Utterance 기능구현을 위한 설정, Render 기능을 위한 기본적인 R 패키지 설치까지를 template화 함.</li>
-</ul>
+<p>EARL 매뉴얼에 따르면 스캐너별로 투여량을 최적화할 수 있다 <span class="citation" data-cites="earl2023">[<a href="#ref-earl2023" role="doc-biblioref">1</a>]</span>.</p>
+<p>팬텀스터디로 아래와 같은 테일블을 만들면 시간과 투여량을 조정하여 최적화할 수 있다 <span class="citation" data-cites="vandeburgt2025">[<a href="#ref-vandeburgt2025" role="doc-biblioref">2</a>]</span>.</p>
+<p><img src="images/clipboard-1111791144.png" class="img-fluid"></p>
+<p>제안하는 지표</p>
+<ol type="1">
+<li>선량관리위원회 활동 (1점)
+<ol type="1">
+<li>기종별로 투여량과 영상획득시간 최적화를 위한 문헌상의 자료 또는 자체적인 자료가 있다.</li>
+<li>일정주기로 샘플링한 영상품질에 근거하여 최적화을 평가한 기록이 있다.</li>
+</ol></li>
+<li>영상품질과 연계된 방사성의약품 투여량 (1점)
+<ol type="1">
+<li>체중군(40-50, 50-60, 60-70, 70-80, 80-90,90-100)당 20명씩의 환자들을 무작위를 추출하여
+<ol type="1">
+<li>진단참고수준 이하의 투여율 (체중으로 결정된 진단참고수준보다 10%이상 적은 경우)
+<ol type="1">
+<li>가이드라인에서 투여량을 10% 오차를 허용하고 있어 10%를 채택</li>
+</ol></li>
+<li>CoV가 10% 미만인 비율
+<ol type="1">
+<li>15%가 최소기준인데, 이는 변별력이 없을 수 있어 10%를 제안</li>
+</ol></li>
+<li>방법은 EARL 준용</li>
+</ol></li>
+</ol></li>
+</ol>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-earl2023" class="csl-entry" role="listitem">
+1. EARL. Manual EARL accredition version 4.2. 2023.
+</div>
+<div id="ref-vandeburgt2025" class="csl-entry" role="listitem">
+2. Burgt A van de, Dibbets-Schneider P, Kotasidis F, Geus-Oei L-F de, Rietbergen DDD, Velden FHP van. <a href="https://doi.org/10.1016/j.ejmp.2025.104935">[18F]FDG administered activity reduction capabilities of a 32-cm axial field-of-view solid-state digital bismuth germanium oxide PET/CT system while maintaining EARL compliance</a>. Physica medica: PM: an international journal devoted to the applications of physics to medicine and biology: official journal of the Italian Association of Biomedical Physics (AIFB). 2025;131:104935.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -8,12 +8,21 @@ categories: [optimization, IQ]
 bibliography: references.bib
 ---
 
-### 2025 German
+EARL 매뉴얼에 따르면 스캐너별로 투여량을 최적화할 수 있다 @earl2023.
 
-Troutwein 등은 long axial field-of-view (LAFOV) PET/CT scanner에서 `[18F]SiTATE` 투여량 감소에 따른 image quality, lesion detectability and quantitative PET parameters를 평가 보고하였다 [@trautwein2025].  
-이들은 투여량 감소의 영향을 평가하기 위하여 list-mode로 획득한 영상을 분할하여 모사하였다.
-subjective image quality는 expert 5 point 사용하였다.
-clinical image noise로써 정량적지표로써 liver 15cm3 VOI로써 SNR과 CoV를 사용하였다.
-phantom image quality로는 CRC도 포함되었다.
+팬텀스터디로 아래와 같은 테일블을 만들면 시간과 투여량을 조정하여 최적화할 수 있다 @vandeburgt2025.
 
-2025 EANMMI Physics에 출판된
+![](images/clipboard-1111791144.png)
+
+제안하는 지표
+
+1.  선량관리위원회 활동 (1점)
+    1.  기종별로 투여량과 영상획득시간 최적화를 위한 문헌상의 자료 또는 자체적인 자료가 있다.
+    2.  일정주기로 샘플링한 영상품질에 근거하여 최적화을 평가한 기록이 있다.
+2.  영상품질과 연계된 방사성의약품 투여량 (1점)
+    1.  체중군(40-50, 50-60, 60-70, 70-80, 80-90,90-100)당 20명씩의 환자들을 무작위를 추출하여
+        1.  진단참고수준 이하의 투여율 (체중으로 결정된 진단참고수준보다 10%이상 적은 경우)
+            1.  가이드라인에서 투여량을 10% 오차를 허용하고 있어 10%를 채택
+        2.  CoV가 10% 미만인 비율
+            1.  15%가 최소기준인데, 이는 변별력이 없을 수 있어 10%를 제안
+        3.  방법은 EARL 준용
